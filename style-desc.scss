@@ -1,0 +1,195 @@
+.main-container{
+  background-color: #f6f6fd;
+}
+
+// .desc {
+// }
+
+.desc-main{
+  margin-left: 50px;
+}
+
+.desc__navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.desc__logo{
+  width: 40px;
+  margin-right: 69px;
+  padding: 0;
+}
+
+.desc__currency {
+  border: none;
+  margin-bottom: 5px;
+  margin-right: 44px;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.desc-favorit{
+  display: flex;
+  margin-right: 200px;
+  margin-top: 5px;
+}
+
+.desc-favorit__favorites { 
+  width: 20px;
+  height: 19px;
+  background-image: url(./resources/icons/favorites-gray.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.desc-favorit__favorites:hover {
+  width: 20px;
+  height: 19px;
+  background-image: url(./resources/icons/favorites-active.svg);
+}
+
+.desc-favorit__text { 
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.75;
+  text-align: left;
+  color: #000000;
+}
+
+// second-navbar
+.second-navbar{
+  margin-left: 0px;
+}
+
+.form {
+  display: flex !important;
+}
+
+.form-control {
+  border: none;
+}
+
+.desc__search{
+  fill: #9d9d9c;
+}
+
+.desc__input {
+  width: 100px;
+  margin-left: 0px;
+  margin-right: 150px;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: 600;
+  color: #9d9d9c;
+}
+
+.btn-outline-success {
+  cursor: pointer;
+  position: static;
+  right: 0px;
+  top: 0px;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #ff7b0000;
+  border: none;
+  box-shadow: 1px solid #444444 !important;
+}
+
+.second{
+  font-family: "OpenSans";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: left;
+  color: #000000 !important;
+}
+
+// slaid
+.desc__carousel {
+  top: 150px;
+}
+
+.carousel-control-prev {
+  left: 0;
+  top: 550px;
+  display: block;
+}
+
+.carousel-control-next {
+  right: 900px;
+  top: 550px;
+  display: block;
+}
+
+.carousel-control-prev-icon {
+  border: 1px solid  #fafafa;
+  border-radius: 50px;
+}
+
+.carousel-control-next-icon {
+  border: 1px solid  #fafafa;
+  border-radius: 50px;
+}
+
+.desc-slaid__title { 
+  width: 655px;
+  height: 158px;
+  font-family: "ProximaNova";
+  font-size: 51.5px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 0.52px;
+  text-align: left;
+  color: white;
+  margin-bottom: 34px;
+}
+
+.desc-slaid__slogan { 
+  width: 655px;
+  height: 158px;
+  font-family: "OpenSans";
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: white;
+  margin-bottom: 34px;
+}
+
+.desc-slaid__btn { 
+  width: 174px;
+  height: 48px;
+  margin-right: 800px;
+  margin-top: -50px;
+  border-radius: 24px;
+  background-image: linear-gradient(to top, #ef6e20, #ec910f);
+  font-family:"OpenSans";
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.75px;
+  text-align: center;
+  color: white;
+}
+
+.desc-up-item {
+  position: absolute;
+  top: 50px;
+  left: 70px;
+}
+
+@media screen and (max-width: 1200px) {
+  .desc-favorit{
+    margin-right: 150px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .desc{
+    display: none;
+  }
+}
