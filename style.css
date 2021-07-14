@@ -1,0 +1,354 @@
+@font-face {
+  font-family: "ProximaNova";
+  font-style: bold;
+  font-weight: 700;
+  src: local("ProximaNova"), url("./resources/fonts/ProximaNova/ProximaNova-Bold.woff") format("woff"), url("./resources/fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans";
+  font-style: bold;
+  font-weight: 700;
+  src: local("OpenSans"), url("./resources/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"), url("./resources/fonts/OpenSans/OpenSans-Semibold.ttf") format("truetype");
+}
+.style {
+  background-color: #fafafa;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  z-index: 3;
+}
+
+.bg-white {
+  background-color: #00000000 !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+  box-shadow: #00000000 !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: #00000000 !important;
+}
+
+.burger__line {
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 3px;
+  box-shadow: 1px 1px 1px #000;
+}
+
+.navbar-collapse {
+  background-color: #fff;
+  padding-left: 5px;
+}
+
+.nav-link {
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.75;
+  text-align: left;
+  color: #9d9d9c !important;
+}
+
+.logo {
+  width: 43px;
+  height: 45px;
+}
+
+.currency {
+  border: none;
+  margin-bottom: 5px;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.search-wrap {
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 55px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.search-wrap .active {
+  width: 100px;
+  margin-left: -110px;
+  transition: all 0.5s ease;
+  color: white;
+}
+
+.search-input {
+  width: 0;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.3s ease;
+  position: absolute;
+  right: -10px;
+  top: 45px;
+}
+
+.search-input .active {
+  width: 98%;
+  padding-left: 5px;
+  transition: all 0.5s 0.8s ease;
+}
+
+.search-input::placeholder {
+  color: #ffffff;
+  font-family: "OpenSans";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.75;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.search-btn {
+  cursor: pointer;
+  position: absolute;
+  right: -30px;
+  top: 46px;
+  fill: #9d9d9c;
+}
+
+.btn-outline-success {
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+
+.btn-outline-success {
+  border: none;
+  box-shadow: none;
+}
+.btn-outline-success .search {
+  fill: #9d9d9c;
+}
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #ff7b009f;
+  border: none;
+  box-shadow: #444444 !important;
+}
+
+.favorites {
+  width: 30px;
+  height: 30px;
+  background-image: url(./resources/icons/favorites-gray.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.favorites:hover {
+  width: 30px;
+  height: 30px;
+  background-image: url(./resources/icons/favorites-active.svg);
+}
+
+.img {
+  width: 100%;
+  min-height: 250px;
+  z-index: 1;
+}
+
+.carousel-item__text {
+  width: 300px;
+  height: 74px;
+  padding: 70px 0px 120px 0px;
+  font-family: "ProximaNova";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 0.24px;
+  text-align: left;
+  color: white;
+}
+
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-control-next {
+  display: none;
+}
+
+.tops {
+  position: relative;
+  top: -80px;
+}
+
+.box {
+  width: 150px;
+  height: 152px;
+  border-radius: 10px;
+  box-shadow: 0 0 29px 0 rgba(75, 75, 75, 0.36);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  margin: 5px;
+  fill: #9d9d9c;
+  color: #9d9d9c;
+}
+.box__text {
+  padding-top: 35px;
+  font-family: "OpenSans";
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  text-align: left;
+}
+.box:hover {
+  width: 150px;
+  height: 152px;
+  border-radius: 10px;
+  box-shadow: 0 0 29px 0 rgba(75, 75, 75, 0.36);
+  fill: white;
+  color: white;
+  background-image: linear-gradient(to top, #ef6e20, #ec910f);
+}
+
+.slogan {
+  width: 257px;
+  height: 39px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  font-family: "ProximaNova";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  text-align: center;
+  color: #000000;
+}
+
+.btn-popular {
+  width: 143px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  padding: 3px 32px 7px 30px;
+  border-radius: 14.5px;
+  border: solid 2px #9d9d9d;
+  font-family: "OpenSans";
+  font-size: 13px;
+  text-align: center;
+  font-weight: 600;
+  color: #9d9d9d;
+}
+
+.btn-popular:hover {
+  color: white;
+  background-image: linear-gradient(to top, #ef6e20, #ec910f);
+}
+
+.size-box {
+  width: 100%;
+  height: 100%;
+  background-color: white !important;
+}
+.size-box__favorites {
+  width: 30px;
+  height: 30px;
+  padding-left: 180%;
+  background-image: url(./resources/icons/favorites-gray.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+.size-box__favorites:hover {
+  width: 30px;
+  height: 30px;
+  background-image: url(./resources/icons/favorites-active.svg);
+}
+.size-box__img {
+  width: 112px;
+  height: 140px;
+  object-position: center;
+}
+.size-box__title {
+  font-family: "OpenSans";
+  font-size: 13px;
+  padding-top: 9px;
+  color: #000000;
+}
+.size-box__price {
+  font-family: "OpenSans";
+  font-size: 14.5px;
+  color: #656565;
+}
+.size-box__sub-price {
+  font-size: 12px;
+}
+
+.footer {
+  background-color: #141e25;
+}
+
+.footer__text {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.31;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #9d9d9d;
+}
+
+.footer__tel {
+  font-family: "ProximaNova";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.11;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: white !important;
+  text-decoration: none;
+}
+
+.fab {
+  font-size: 20px;
+  color: #ef6e20;
+  padding-left: 30px;
+}
+
+.fa-twitter {
+  font-size: 20px;
+  color: #ef6e20;
+  padding-left: 0px;
+}
+
+.fab:hover {
+  color: #49ef20;
+  cursor: pointer;
+}
+
+.footer__slogan {
+  padding-top: 49px;
+  font-family: "OpenSans";
+  font-size: 11px;
+  text-align: left;
+  color: #4c4c4c;
+}
+
+.footer__sub-slogan {
+  margin-top: -10px;
+  font-family: "OpenSans";
+  font-size: 11px;
+  text-align: left;
+  color: #4c4c4c;
+}
