@@ -175,10 +175,32 @@
   color: white;
 }
 
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon {
+  border: 1px solid #fafafa;
+  border-radius: 50px;
+}
+
+.carousel-control-next-icon {
+  border: 1px solid #fafafa;
+  border-radius: 50px;
+}
+
 .tops {
   position: relative;
   top: -80px;
   margin-left: 0px;
+}
+
+.carousel-caption {
+  left: 6%;
 }
 
 .box {
