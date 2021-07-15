@@ -35,6 +35,8 @@
 .navbar-light .navbar-toggler {
   border: none;
   box-shadow: #00000000 !important;
+  position: relative;
+  left: -50px;
 }
 
 .navbar-toggler:focus {
@@ -127,7 +129,7 @@
   position: absolute;
   right: -30px;
   top: 46px;
-  fill: #9d9d9c;
+  fill: #ffffff;
 }
 
 .btn-outline-success { 
@@ -155,10 +157,15 @@
 .favorites{
   width: 30px;
   height: 30px;
-  background-image: url(./resources/icons/favorites-gray.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
   cursor: pointer;
+}
+
+.favorites__svg {
+  fill: white;
+}
+
+.favorites__svg:hover {
+  fill: rgba(255, 166, 0, 0);
 }
 
 .favorites:hover {
@@ -405,10 +412,32 @@
 //   }
 // }
 
-@media screen and (min-width:780px) {
+@media screen and (min-width:570px) {
   .mobi-navbar{
     width: 70%;
   }
+  .favorites{
+      margin-right: 50px;
+    }
+    .search-wrap { 
+      position: relative;
+      left: 50px;
+    }
+}
+
+@media screen and (min-width:765px) {
+  .mobi-navbar{
+    width: 72%;
+  }
+
+  .search-wrap { 
+    position: relative;
+    left: 50px;
+  }
+
+  .favorites{
+    margin-right: 0px;
+    }
 }
 
 @media screen and (min-width: 990px) {

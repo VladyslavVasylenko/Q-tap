@@ -113,6 +113,7 @@
 // slaid
 .desc__carousel {
   top: 150px;
+  left: -25px;
 }
 
 .carousel-control-prev {
@@ -165,7 +166,9 @@
   width: 174px;
   height: 48px;
   margin-right: 800px;
-  margin-top: -50px;
+  position: relative;
+  top: -70px;
+  // margin-top: -50px;
   border-radius: 24px;
   background-image: linear-gradient(to top, #ef6e20, #ec910f);
   font-family:"OpenSans";
@@ -180,6 +183,43 @@
   position: absolute;
   top: 50px;
   left: 70px;
+}
+
+// Section baner
+.baner { 
+  padding-top: 200px;
+  margin-left: -35px;
+  margin-right: 15px;
+}
+
+.baner__img { 
+  object-fit: cover;
+}
+
+.baner__text-block {
+  background-color: white;
+  padding-bottom: 42px;
+  padding-right: 20px;
+}
+
+.baner__title { 
+  font-family: "OpenSans";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: left;
+  color: #000000;
+  margin: 49px -10px 71px 19px;
+}
+
+.baner__link { 
+  text-decoration: none;
+  color: #ec910f;
+  padding: 0px 0px 0px 19px;
+}
+
+.fa-chevron-right { 
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 1200px) {
