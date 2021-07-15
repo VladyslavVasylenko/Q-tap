@@ -192,13 +192,13 @@
 .carousel-control-prev {
   // left: 0;
   // top: 150px;
-  display: none;
+  // display: none;
 }
 
 .carousel-control-next {
   // right: 650px;
   // top: 150px;
-  display: none;
+  // display: none;
 }
 
 // .carousel-control-prev-icon {
@@ -228,9 +228,12 @@
   flex-direction: column;
   align-self: center;
   margin: 5px;
-  fill: #9d9d9c;
-  color: #9d9d9c;
-  
+  &__link{
+    background-color: white;
+    text-decoration: none;
+    fill: #9d9d9c;
+    color: #9d9d9c;
+  }
   &__text {
     padding-top: 35px;
     font-family: "OpenSans";
@@ -243,13 +246,15 @@
     text-align: left;
   }
 
-  &:hover {
-    width: 150px;
-    height: 152px;
-    border-radius: 10px;
-    box-shadow: 0 0 29px 0 rgba(75, 75, 75, 0.36);
+  &__link:hover {
     fill: white;
     color: white;
+    background-image: linear-gradient(to top, #ef6e20, #ec910f);
+  }
+
+  &:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 29px 0 rgba(75, 75, 75, 0.36);
     background-image: linear-gradient(to top, #ef6e20, #ec910f);
   }
 }
@@ -291,6 +296,10 @@
   width: 100%;
   height: 100%;
   background-color: white !important;
+  &__links{
+    text-decoration: none;
+    cursor: pointer;
+  }
   &__favorites { 
     width: 30px;
     height: 30px;
