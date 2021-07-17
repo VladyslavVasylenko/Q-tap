@@ -65,6 +65,11 @@
   color: #9d9d9c !important;
 }
 
+.nav-link:hover {
+  color: #686868 !important;
+  transition: all 0.3s ease;
+}
+
 // logo
 .logo {
   width: 43px;
